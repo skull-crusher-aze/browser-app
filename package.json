@@ -1,0 +1,15 @@
+{
+  "name": "browser-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Lucifer25x",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^13.1.6"
+  }
+}
