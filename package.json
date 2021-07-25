@@ -7,7 +7,7 @@
     "start": "electron ."
   },
   "keywords": [],
-  "author": "Lucifer25x",
+  "author": "Malik",
   "license": "MIT",
   "dependencies": {
     "electron": "^13.1.6"
