@@ -1,158 +1,241 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
-
 * {
-    font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
-:root {
-    --bg: rgb(42,90,167);
-}
 body {
-    background: url("./assets/bg10.jpg");
-    width: 100%;
+	background: url("./assets/bg10.jpg");
+	width: 100%;
+	height: 100%s;
+	background-size: cover;
+	max-width: 100%;
 }
 
 .main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    max-width: 500px;
-    min-width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	max-width: 500px;
+	min-width: 300px;
 }
 
 h1 {
-    letter-spacing: 1px;
-    font-weight: 700;
-    font-size: 3em;
+	letter-spacing: 1px;
+	font-weight: 700;
+	font-size: 3em;
 }
 
 .search {
-    width: 100%;
-    height: 1em;
-    position: relative;
-    height: auto;
-    justify-content: center;
-    align-items: center;
+	width: 100%;
+	height: 1em;
+	position: relative;
+	height: auto;
+	justify-content: center;
+	align-items: center;
 }
+
 .search input {
-    width: 100%;
-    position: absolute;
-    height: 1.5em;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: .8em;
-    padding-bottom: .8em;
-    padding-left: 3.5em;
-    border: none;
-    border-radius: 20px;
+	width: 100%;
+	position: absolute;
+	height: 1.5em;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	padding-top: .8em;
+	padding-bottom: .8em;
+	padding-left: 3.5em;
+	border: none;
+	border-radius: 20px;
 }
+
 input:focus {
-    outline: none;
+	outline: none;
 }
+
 .search i {
-    z-index: 10000;
-    color: black;
-    position: absolute;
-    left: 0em;
-    top: .75em;
-    color: rgb(177, 172, 172);
-    cursor: pointer;
+	z-index: 10000;
+	color: black;
+	position: absolute;
+	left: 0em;
+	top: .75em;
+	color: rgb(177, 172, 172);
+	cursor: pointer;
 }
+
 .websites {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    padding-top: 2em;
+	margin-top: 70px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	padding-top: 2em;
 }
+
 .list {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
+
 .web {
-    background-color: white;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 1em;
-    padding: 25px;
-    transition: .3s ease all;
+	background-color: white;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 1em;
+	padding: 25px;
+	transition: .3s ease all;
 }
+
 .web:hover {
-    background-color: rgba(255,255,255,.7);
-    transition: .3s ease all;
+	background-color: rgba(255, 255, 255, .7);
+	transition: .3s ease all;
 }
+
 @media(max-width: 800px) {
-    .web {
-        margin: .3em;
-    }
+	.web {
+		margin: .3em;
+	}
 }
+
 img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 30px;
-    transform: translate(-50%,-50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 30px;
+	transform: translate(-50%, -50%);
 }
+
 .customize {
-    position: fixed;
-    bottom: 2em;
-    right: 2em;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
+
 .customize i {
-    cursor: pointer;
-    color: white;
-    padding: 1em;
-    transition: .3s ease all;
+	cursor: pointer;
+	color: white;
+	padding: 1em;
+	transition: .3s ease all;
 }
+
 .customize i:hover {
-    background-color: rgba(200,200,200,.1);
-    border-radius: 50%;
-    transition: .3s ease all;
+	background-color: rgba(200, 200, 200, .1);
+	border-radius: 50%;
+	transition: .3s ease all;
 }
 
 .custom {
-    position: absolute;
-    bottom: 6em;
-    right: 2em;
-    padding: 1em;
-    display: none;
-    background-color: rgba(200,200,200,.5);
-    border-radius: 10px;
-    align-items: center;
-}
-.custom.visible {
-    display: block;
-}
-.custom input {
-    border-radius: 5px;
+	position: absolute;
+	bottom: 6em;
+	right: 2em;
+	padding: 1em;
+	display: none;
+	background-color: rgba(200, 200, 200, .5);
+	border-radius: 10px;
+	align-items: center;
 }
 
-#img {
-    background-color: rgba(0,0,0,.8);
-    color:white;
-    border-radius: 5px;
-    border:1px solid transparent;
-    outline: none;
-    padding: .5em 1em;
-    margin-left: .1em;
-    cursor: pointer;
+.custom.visible {
+	display: block;
 }
-#img:hover {
-    border: 1px solid black;
-    background-color: rgba(0,0,0,.7);
+
+.custom input {
+	border-radius: 5px;
+}
+
+.custom #img {
+	background-color: rgba(0, 0, 0, .8);
+	color: white;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	outline: none;
+	padding: .5em 1em;
+	margin-left: .1em;
+	cursor: pointer;
+}
+
+.custom #img:hover {
+	border: 1px solid black;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+.how-usage {
+	position: fixed;
+	left: 2em;
+	bottom: 2em;
+	padding: 1em 1.2em;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+
+.how-usage:hover {
+	background-color: rgba(200, 200, 200, .1);
+	border-radius: 50%;
+	transition: .3s ease all;
+}
+
+.how-usage i {
+	color: white;
+}
+
+.use {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .6);
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.use.visible {
+	display: none;
+}
+
+.use .usage {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1em;
+    width: 60%;
+    max-width: 500px;
+    min-width: 300px;
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.use .usage ul {
+	list-style: none;
+	text-align: left;
+	padding: .5em;
+	background-color: #eee;
+	border-radius: 5px;
+}
+
+.use .usage button {
+	padding: .5em 1em;
+	background-color: rgba(0, 0, 0, .7);
+	border-radius: 5px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.use .usage button:hover {
+	background-color: rgba(0, 0, 0, .9);
+	transition: .3s ease all;
 }
