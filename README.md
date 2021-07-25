@@ -14,4 +14,4 @@ Electron-packager yükləmək üçün:
 ```
 npm install electron-packager
 ```
-<a href="https://t.me/lucifer25x1"><img src="https://i.ibb.co/FnCLs4d/image-2021-07-11-211059.png" alt="image-2021-07-11-211059" border="0"></a>
+<a href="https://t.me/lucifer25x1"><img src="./browser-app.PNG" alt="image-2021-07-11-211059" border="0"></a>
